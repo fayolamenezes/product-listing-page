@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Product Listing</h1>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="books">Books</option>
+        <option value="home">Home & Kitchen</option>
+        <option value="fitness">Fitness & Sports</option>
+      </select>
+
+      <select id="priceFilter">
+        <option value="all">All</option>
+        <option value="0-4000">Under ₹4000</option>
+        <option value="4000-8000">₹4000 - ₹8000</option>
+        <option value="8000+">Above ₹8000</option>
+      </select>
+
+
+      <select id="sortOptions">
+        <option value="default">Sort By</option>
+        <option value="priceAsc">Price: Low to High</option>
+        <option value="priceDesc">Price: High to Low</option>
+        <option value="ratingDesc">Rating: High to Low</option>
+      </select>
+
+      <button id="clearFilters">Clear Filters</button>
+    </div>
+    
+    <p id="resultsCount" class="results-count"></p>
+    <div id="productList" class="product-list"></div>
+    <div id="pagination" class="pagination-controls"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
